@@ -19,6 +19,8 @@ def load_data(dir_name = 'faces_imgs'):
     '''
     imgs = []
     for filename in os.listdir(dir_name):
+        if filename == '.DS_Store':
+            continue
         if os.path.isfile(dir_name + '/' + filename):
             img = mpimg.imread(dir_name + '/' + filename)
             img = rgb2gray(img)
