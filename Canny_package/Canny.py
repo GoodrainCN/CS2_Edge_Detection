@@ -1,7 +1,7 @@
 import cv2
 #Canny Algorithm
 # Read the original image
-img = cv2.imread('edge_detection/download.jpg') 
+img = cv2.imread('faces_imgs\download.jpg') 
 # Display original image
 cv2.imshow('Original', img)
 cv2.waitKey(0)
